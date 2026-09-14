@@ -1,0 +1,15 @@
+# Copy to .dev.vars locally. Never commit real values.
+# Set this to the exact origin used in your browser, without a trailing slash.
+APP_ORIGIN="http://localhost:3000"
+
+# Required for /admin: bcrypt hash of your own strong password (cost 12).
+# Blank means administrator login is not configured.
+ADMIN_PASSWORD_HASH=""
+
+# Optional external job runner bearer secret; blank disables that entry point.
+JOB_SECRET=""
+
+# Optional paid avatar generation; supply your own credentials and model ID.
+# These are server-side only. Never use a NEXT_PUBLIC_ or VITE_ prefix.
+ARK_API_KEY=""
+AVATAR_IMAGE_MODEL=""
